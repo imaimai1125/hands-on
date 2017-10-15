@@ -1,0 +1,20 @@
+/* In[] の色 */
+.rise-enabled .reveal .slides div.prompt.input_prompt
+{
+    color: #3EB51C;
+}
+
+/* スライド全体のフォントの種類、サイズ */
+.rise-enabled .reveal .slides
+{
+    font-size: 32px;
+    font-family: "Meiryo", sans-serif;
+    font-family: "Ricty", monospace;
+}
+
+.rise-enabled .reveal .cm-comment
+{
+    font-size: 28px
+}
+
+table { widh: 400px; height: 150px; border-collapse:collapse;}
