@@ -7,3 +7,4 @@ statsmodels
 jupyter
 jubatus
 jubakit
+embedded_jubatus

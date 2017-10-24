@@ -9,6 +9,7 @@ RUN apt-get -y update && \
 
 # pip
 RUN pip install --upgrade pip
+RUN pip install Cython
 RUN pip install -r requirements.txt
 
 # git clone
@@ -20,5 +21,4 @@ RUN mkdir ~/.jupyter
 COPY jupyter_notebook_config.py ~/.jupyter_notebook_config.py
 
 # run jupyter
-RUN jupyter notebook 
-#RUN jubaclassifier -f /app/hands-on/config/linear.json &
+RUN exec jupyter notebook --port 8888 --no-browser &> /dev/null &
