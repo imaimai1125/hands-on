@@ -13,8 +13,7 @@ RUN pip install Cython
 RUN pip install -r requirements.txt
 
 # git clone
-RUN git clone https://github.com/imaimai1125/hands-on.git && \
-    git clone https://github.com/shiodat/jubatus-feature-extraction.git
+RUN git clone https://github.com/jubatus/events.git
 
 # jupyter config
 RUN mkdir ~/.jupyter
