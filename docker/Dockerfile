@@ -19,5 +19,3 @@ RUN git clone https://github.com/jubatus/events.git
 RUN mkdir ~/.jupyter
 COPY jupyter_notebook_config.py ~/.jupyter_notebook_config.py
 
-# run jupyter
-RUN exec jupyter notebook --port 8888 --no-browser &> /dev/null &
